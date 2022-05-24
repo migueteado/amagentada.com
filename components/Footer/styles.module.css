@@ -1,0 +1,23 @@
+.MainFooter {
+  @apply w-full border-t mt-6;
+}
+
+.MainFooter__Container {
+  @apply container mx-auto p-2;
+}
+
+.PageLabel {
+  @apply text-sm text-center my-4 tracking-wider;
+}
+
+.DevBrand {
+  @apply text-xs text-center my-4 tracking-wider;
+}
+
+.MainFooterLinks {
+  @apply text-center my-4 tracking-wider text-sm uppercase;
+}
+
+.MainFooterLabel {
+  @apply flex justify-between px-2;
+}

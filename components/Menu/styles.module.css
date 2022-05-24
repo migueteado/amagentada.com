@@ -1,0 +1,55 @@
+.MainMenuContainer {
+  @apply fixed w-full h-full inset-0 bg-white/75;
+}
+
+.MainMenu {
+  @apply fixed flex flex-col top-0 right-0 bg-white h-full w-full max-w-xl shadow-xl;
+}
+
+.CloseButtonContainer {
+  @apply flex justify-end p-2;
+}
+
+.CloseButton {
+  @apply py-2 px-4;
+}
+
+.Menu {
+  @apply p-2 flex flex-col md:flex-row items-center justify-center grow;
+}
+
+.SocialsContainer {
+  @apply flex flex-col justify-center text-center md:text-left mb-6;
+}
+
+.SocialsTitle {
+  @apply uppercase text-sm tracking-wider mb-4 font-thin;
+}
+
+.Socials {
+  @apply grid grid-cols-1 gap-2;
+}
+
+.NavigationContainer {
+  @apply flex flex-col justify-center text-center md:text-left mb-6;
+}
+
+.NavigationTitle {
+  @apply uppercase text-sm tracking-wider mb-4 font-thin;
+}
+
+.Navigation {
+  @apply grid grid-cols-1 gap-4;
+}
+
+.MenuIcon {
+  @apply mr-2;
+}
+
+.MenuLink {
+  @apply text-xl uppercase;
+}
+
+.SocialLink {
+  @apply text-lg uppercase;
+}

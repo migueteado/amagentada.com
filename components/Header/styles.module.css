@@ -1,0 +1,11 @@
+.MainHeader {
+  @apply w-full border-b mb-6;
+}
+
+.MainHeader__Container {
+  @apply container mx-auto p-2 flex justify-end;
+}
+
+.MainMenuToggler {
+  @apply py-2 px-4;
+}
