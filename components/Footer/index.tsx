@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styles from "./styles.module.css"
 
 const Footer = () => {
@@ -6,7 +7,9 @@ const Footer = () => {
       <div className={styles.MainFooter}>
         <div className={styles.MainFooter__Container}>
           <div className={styles.MainFooterLinks}>
-            <a href="">Politicas de Privacidad</a>
+            <Link href="/privacy">
+              <a>Politicas de Privacidad</a>
+            </Link>
           </div>
           <div className={styles.MainFooterLabel}>
             <div className={styles.PageLabel}>

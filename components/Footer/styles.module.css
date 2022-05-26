@@ -1,5 +1,5 @@
 .MainFooter {
-  @apply w-full border-t mt-6;
+  @apply w-full border-t;
 }
 
 .MainFooter__Container {

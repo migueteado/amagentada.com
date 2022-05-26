@@ -1,0 +1,7 @@
+.PageContentContainer {
+  @apply py-24;
+}
+
+.PageContent {
+  @apply container mx-auto;
+}

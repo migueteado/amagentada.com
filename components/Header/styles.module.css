@@ -1,9 +1,9 @@
 .MainHeader {
-  @apply w-full border-b mb-6;
+  @apply w-full border-b fixed top-0 left-0 bg-white;
 }
 
 .MainHeader__Container {
-  @apply container mx-auto p-2 flex justify-end;
+  @apply p-2 flex justify-end;
 }
 
 .MainMenuToggler {
