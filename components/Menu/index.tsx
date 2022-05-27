@@ -1,4 +1,9 @@
-import { faInstagram, faPinterestP } from "@fortawesome/free-brands-svg-icons"
+import {
+  faInstagram,
+  faPinterest,
+  faPinterestP,
+} from "@fortawesome/free-brands-svg-icons"
+import { motion } from "framer-motion"
 import {
   faBriefcase,
   faComments,
@@ -22,6 +27,66 @@ const Menu = ({ toggleMenu, isOpen }: MenuProps) => {
     toggleMenu(!isOpen)
   }
 
+  const socials = {
+    title: "Redes Sociales",
+    links: [
+      {
+        id: "instagram",
+        to: "https://www.instagram.com/byamagentada/",
+        label: "Instagram",
+        icon: faInstagram,
+      },
+      {
+        id: "pinterest",
+        to: "https://co.pinterest.com/Amagentada/",
+        label: "Pinterest",
+        icon: faPinterest,
+      },
+    ],
+  }
+
+  const navigation = {
+    title: "Menu",
+    links: [
+      {
+        id: "home",
+        to: "/",
+        label: "Inicio",
+        icon: faHome,
+      },
+      {
+        id: "about",
+        to: "/about",
+        label: "Acerca de mi",
+        icon: faUser,
+      },
+      {
+        id: "consultancies",
+        to: "/consultancies",
+        label: "Asesorias",
+        icon: faComments,
+      },
+      {
+        id: "services",
+        to: "/services",
+        label: "Servicios",
+        icon: faPalette,
+      },
+      {
+        id: "work",
+        to: "/work",
+        label: "Portafolio",
+        icon: faBriefcase,
+      },
+      {
+        id: "contact",
+        to: "/contact",
+        label: "Contactame",
+        icon: faPaperPlane,
+      },
+    ],
+  }
+
   return (
     <>
       <div
@@ -36,91 +101,39 @@ const Menu = ({ toggleMenu, isOpen }: MenuProps) => {
           <div className={styles.MenuContainer}>
             <div className={styles.Menu}>
               <div className={styles.SocialsContainer}>
-                <div className={styles.SocialsTitle}>Redes Sociales</div>
+                <div className={styles.SocialsTitle}>{socials.title}</div>
                 <div className={styles.Socials}>
-                  <a
-                    className={styles.SocialLink}
-                    href="https://www.instagram.com/byamagentada/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faInstagram}
-                      className={styles.MenuIcon}
-                    />
-                    <span>Instagram</span>
-                  </a>
-                  <a
-                    className={styles.SocialLink}
-                    href="https://co.pinterest.com/Amagentada/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faPinterestP}
-                      className={styles.MenuIcon}
-                    />
-                    <span>Pinterest</span>
-                  </a>
+                  {socials.links.map(({ id, to, label, icon }) => (
+                    <a
+                      key={id}
+                      className={styles.SocialLink}
+                      href={to}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        icon={icon}
+                        className={styles.MenuIcon}
+                      />
+                      <span>{label}</span>
+                    </a>
+                  ))}
                 </div>
               </div>
               <div className={styles.NavigationContainer}>
-                <div className={styles.NavigationTitle}>Menu</div>
+                <div className={styles.NavigationTitle}>{navigation.title}</div>
                 <div className={styles.Navigation}>
-                  <Link href="/">
-                    <a className={styles.MenuLink}>
-                      <FontAwesomeIcon
-                        icon={faHome}
-                        className={styles.MenuIcon}
-                      />
-                      <span>Inicio</span>
-                    </a>
-                  </Link>
-                  <Link href="/about">
-                    <a className={styles.MenuLink}>
-                      <FontAwesomeIcon
-                        icon={faUser}
-                        className={styles.MenuIcon}
-                      />
-                      <span>Acerca de mi</span>
-                    </a>
-                  </Link>
-                  <Link href="/consultancies">
-                    <a className={styles.MenuLink}>
-                      <FontAwesomeIcon
-                        icon={faComments}
-                        className={styles.MenuIcon}
-                      />
-                      <span>Asesorias</span>
-                    </a>
-                  </Link>
-                  <Link href="/services">
-                    <a className={styles.MenuLink}>
-                      <FontAwesomeIcon
-                        icon={faPalette}
-                        className={styles.MenuIcon}
-                      />
-                      <span>Servicios</span>
-                    </a>
-                  </Link>
-                  <Link href="/work">
-                    <a className={styles.MenuLink}>
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className={styles.MenuIcon}
-                      />
-                      <span>Portafolio</span>
-                    </a>
-                  </Link>
-                  <Link href="/contact">
-                    <a className={styles.MenuLink}>
-                      <FontAwesomeIcon
-                        icon={faPaperPlane}
-                        className={styles.MenuIcon}
-                      />
-                      <span>Contactame</span>
-                    </a>
-                  </Link>
+                  {navigation.links.map(({ id, to, label, icon }) => (
+                    <Link key={id} href={to}>
+                      <a className={styles.MenuLink}>
+                        <FontAwesomeIcon
+                          icon={icon}
+                          className={styles.MenuIcon}
+                        />
+                        <span>{label}</span>
+                      </a>
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
