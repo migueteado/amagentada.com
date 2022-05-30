@@ -9,6 +9,7 @@ interface MenuContainerProps {
   toggle: Function
   children: ReactNode
 }
+
 const variants = {
   open: {
     x: 0,

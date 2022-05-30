@@ -3,14 +3,13 @@ import { motion } from "framer-motion"
 import styles from "./styles.module.css"
 
 interface FooterItemProps {
-  key: string
   to: string
   label: string
 }
 
-const FooterItem = ({ key, to, label }: FooterItemProps): JSX.Element => {
+const FooterItem = ({ to, label }: FooterItemProps): JSX.Element => {
   return (
-    <Link key={key} href={to}>
+    <Link href={to}>
       <motion.a
         className={styles.FooterItem}
         whileHover={{ scale: 1.05 }}

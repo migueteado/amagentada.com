@@ -8,6 +8,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { faInstagram, faPinterest } from "@fortawesome/free-brands-svg-icons"
 
+const devLabel = "🚀 DEVELOPED BY SOYMVILLALOBOS"
+const brandLabel = "AMAGENTADA | Branding e Identidad de Marca © 2022"
+
 const footerLinks = {
   title: "Footer",
   links: [
@@ -79,4 +82,4 @@ const menuLinks = {
   ],
 }
 
-export { footerLinks, menuLinks, socialLinks }
+export { footerLinks, menuLinks, socialLinks, devLabel, brandLabel }

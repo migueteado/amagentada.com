@@ -19,5 +19,5 @@
 }
 
 .MainFooterLabel {
-  @apply flex justify-between px-2;
+  @apply flex flex-col md:flex-row justify-between px-2;
 }

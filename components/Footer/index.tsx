@@ -1,4 +1,4 @@
-import { footerLinks } from "../../config/const"
+import { brandLabel, devLabel, footerLinks } from "../../config/const"
 import FooterItem from "./FooterItem"
 import styles from "./styles.module.css"
 
@@ -15,10 +15,8 @@ const Footer = (): JSX.Element => {
             ))}
           </div>
           <div className={styles.MainFooterLabel}>
-            <div className={styles.PageLabel}>
-              AMAGENTADA | Branding e Identidad de Marca &copy; 2022
-            </div>
-            <div className={styles.DevBrand}>DEVELOPED BY SOYMVILLALOBOS</div>
+            <div className={styles.PageLabel}>{brandLabel}</div>
+            <div className={styles.DevBrand}>{devLabel}</div>
           </div>
         </div>
       </div>

@@ -5,15 +5,14 @@ import { motion } from "framer-motion"
 import styles from "./styles.module.css"
 
 interface MenuItemProps {
-  key: string
   to: string
   icon: IconProp
   label: string
 }
 
-const MenuItem = ({ key, to, icon, label }: MenuItemProps): JSX.Element => {
+const MenuItem = ({ to, icon, label }: MenuItemProps): JSX.Element => {
   return (
-    <Link key={key} href={to}>
+    <Link href={to}>
       <motion.a
         className={styles.MenuItem}
         whileHover={{ scale: 1.05 }}
