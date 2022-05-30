@@ -1,0 +1,7 @@
+.Navigation {
+  @apply flex flex-col justify-center md:text-left mb-6 md:pr-12;
+}
+
+.NavigationTitle {
+  @apply uppercase text-sm tracking-wider mb-4 font-thin;
+}

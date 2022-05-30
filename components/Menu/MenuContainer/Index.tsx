@@ -13,9 +13,15 @@ interface MenuContainerProps {
 const variants = {
   open: {
     x: 0,
+    transition: {
+      duration: 0.2,
+    },
   },
   closed: {
     x: "100%",
+    transition: {
+      duration: 0.2,
+    },
   },
 }
 
@@ -32,14 +38,18 @@ const MenuContainer = ({
     <>
       <motion.div
         className={styles.MenuContainer}
-        transition={{ duration: 0.2 }}
         animate={isOpen ? "open" : "closed"}
         variants={variants}
       >
         <div className={styles.CloseButtonContainer}>
-          <button className={styles.CloseButton} onClick={handleToggle}>
+          <motion.button
+            className={styles.CloseButton}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={handleToggle}
+          >
             <FontAwesomeIcon icon={faTimes} />
-          </button>
+          </motion.button>
         </div>
         <div className={styles.Menu}>
           <div className={styles.MenuContent}>{children}</div>

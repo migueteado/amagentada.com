@@ -10,10 +10,16 @@ const variants = {
   open: {
     opacity: 1,
     display: "block",
+    transition: {
+      duration: 0.2,
+    },
   },
   closed: {
     opacity: 0,
     display: "none",
+    transition: {
+      duration: 0.2,
+    },
   },
 }
 
@@ -25,7 +31,6 @@ const Backdrop = ({ isOpen, toggle }: BackdropProps): JSX.Element => {
   return (
     <motion.div
       className={styles.Backdrop}
-      transition={{ duration: 0.2 }}
       animate={isOpen ? "open" : "closed"}
       variants={variants}
       onClick={handleToggle}

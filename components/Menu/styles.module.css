@@ -1,21 +1,5 @@
-.SocialsContainer {
-  @apply flex flex-col justify-center md:text-left mb-6;
-}
-
-.SocialsTitle {
-  @apply uppercase text-sm tracking-wider mb-4 font-thin;
-}
-
 .Socials {
   @apply grid grid-cols-1 gap-2;
-}
-
-.NavigationContainer {
-  @apply flex flex-col justify-center md:text-left mb-6 md:pl-12;
-}
-
-.NavigationTitle {
-  @apply uppercase text-sm tracking-wider mb-4 font-thin;
 }
 
 .Navigation {
