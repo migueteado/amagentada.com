@@ -1,7 +1,7 @@
 import { NextPage } from "next"
 import Head from "next/head"
 import Footer from "../components/Footer"
-import Header from "../components/Header"
+import Menu from "../components/Menu"
 import PageContent from "../components/PageContent"
 
 const Home: NextPage = () => {
@@ -10,10 +10,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Inicio | Amagentada</title>
       </Head>
-      <Header />
-      <PageContent>
-        <div>Inicio</div>
-      </PageContent>
+      <Menu />
+      <PageContent>Inicio</PageContent>
       <Footer />
     </>
   )

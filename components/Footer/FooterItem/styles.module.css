@@ -1,0 +1,3 @@
+.FooterItem {
+  @apply text-center tracking-wider text-sm uppercase cursor-pointer;
+}

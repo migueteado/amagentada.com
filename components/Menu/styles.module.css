@@ -1,35 +1,3 @@
-.MainMenuContainer {
-  @apply fixed w-full h-full inset-0 transition-all backdrop-filter backdrop-blur-sm bg-transparent hidden;
-}
-
-.MainMenuContainer.isOpen {
-  @apply bg-white/75 block;
-}
-
-.MainMenu {
-  @apply fixed flex flex-col top-0 right-0 bg-white h-full w-full max-w-xl shadow-xl transition-transform translate-x-full;
-}
-
-.MainMenu.isOpen {
-  @apply translate-x-0;
-}
-
-.CloseButtonContainer {
-  @apply flex justify-end p-2;
-}
-
-.CloseButton {
-  @apply py-2 px-4;
-}
-
-.MenuContainer {
-  @apply p-2 md:pl-24 flex flex-col md:flex-row items-center justify-center md:justify-start grow;
-}
-
-.Menu {
-  @apply flex flex-col-reverse md:flex-row items-center md:items-start;
-}
-
 .SocialsContainer {
   @apply flex flex-col justify-center md:text-left mb-6;
 }
@@ -52,16 +20,4 @@
 
 .Navigation {
   @apply grid grid-cols-1 gap-4;
-}
-
-.MenuIcon {
-  @apply mr-2 text-xs;
-}
-
-.MenuLink {
-  @apply text-lg flex items-center justify-start;
-}
-
-.SocialLink {
-  @apply text-lg flex items-center justify-start;
 }

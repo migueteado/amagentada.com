@@ -15,7 +15,7 @@
 }
 
 .MainFooterLinks {
-  @apply text-center my-4 tracking-wider text-sm uppercase;
+  @apply my-4 flex justify-center;
 }
 
 .MainFooterLabel {

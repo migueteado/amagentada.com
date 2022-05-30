@@ -1,0 +1,7 @@
+.SocialIcon {
+  @apply mr-2 text-xs;
+}
+
+.SocialItem {
+  @apply text-lg flex items-center justify-start cursor-pointer;
+}

@@ -1,0 +1,7 @@
+.MenuIcon {
+  @apply mr-2 text-xs;
+}
+
+.MenuItem {
+  @apply text-lg flex items-center justify-start cursor-pointer;
+}
