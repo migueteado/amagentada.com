@@ -9,11 +9,11 @@ const Footer = (): JSX.Element => {
     <>
       <div className={styles.MainFooter}>
         <div className={styles.MainFooter__Container}>
-          <div className={styles.MainFooterLinks}>
+          {/* <div className={styles.MainFooterLinks}>
             {navigation.links.map(({ id, to, label }) => (
               <FooterItem key={id} to={to} label={label} />
             ))}
-          </div>
+          </div> */}
           <div className={styles.MainFooterLabel}>
             <div className={styles.PageLabel}>{brandLabel}</div>
             <div className={styles.DevBrand}>{devLabel}</div>

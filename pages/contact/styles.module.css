@@ -1,0 +1,29 @@
+.PageText {
+  @apply text-xl whitespace-pre-line mb-12;
+}
+
+.ContactPageContainer {
+}
+
+.ContactContainer {
+}
+
+.Title {
+  @apply text-2xl font-bold mb-2 font-serif;
+}
+
+.Contacts {
+  @apply grid grid-cols-1 gap-4 text-xl;
+}
+
+.ImageContainer {
+  @apply relative w-full h-96 bg-black;
+}
+
+.TextContainer {
+  @apply p-12 shadow-lg mt-24 -left-24;
+}
+
+.Columns {
+  @apply grid grid-cols-2 relative;
+}
