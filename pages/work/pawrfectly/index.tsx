@@ -6,12 +6,12 @@ import Menu from "../../../components/Menu"
 import PageContent from "../../../components/PageContent"
 import WorkContent from "../../../components/WorkContent"
 import WorkImage from "../../../components/WorkImage"
+import Image1 from "../../../public/images/work/pawrfectly/1.gif"
 import Image2 from "../../../public/images/work/pawrfectly/2.jpg"
 import Image3 from "../../../public/images/work/pawrfectly/3.jpg"
 import Image4 from "../../../public/images/work/pawrfectly/4.jpg"
 import Image5 from "../../../public/images/work/pawrfectly/5.jpg"
 import Image6 from "../../../public/images/work/pawrfectly/6.jpg"
-import Image7 from "../../../public/images/work/pawrfectly/7.gif"
 
 const data = {
   title: "Pawrfectly",
@@ -30,7 +30,7 @@ const Pawrfectly: NextPage = () => {
       </Head>
 
       <PageContent>
-        <WorkImage image={Image7} description={"pawrfectly"} type={"first"} />
+        <WorkImage image={Image1} description={"pawrfectly"} type={"first"} />
         <WorkContent
           title={data.title}
           description={data.description}
