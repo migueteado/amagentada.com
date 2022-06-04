@@ -1,5 +1,6 @@
 import { NextPage } from "next"
 import Head from "next/head"
+import Link from "next/link"
 import ContactToggler from "../../components/Contact"
 import Footer from "../../components/Footer"
 import Menu from "../../components/Menu"
@@ -13,7 +14,22 @@ const Home: NextPage = () => {
       </Head>
       <ContactToggler />
       <Menu />
-      <PageContent>Portafolio</PageContent>
+      <PageContent>
+        Portafolio
+        <ul>
+          <li>
+            <Link href="/work/pawrfectly">
+              <a>Pawrfectly</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/work/nataly-postres">
+              <a>Nataly Postres</a>
+            </Link>
+          </li>
+        </ul>
+      </PageContent>
+
       <Footer />
     </>
   )
