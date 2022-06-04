@@ -1,4 +1,5 @@
-import { brandLabel, devLabel, footerLinks } from "../../config/const"
+import { footerLinks } from "../../config/menus"
+import { brandLabel, devLabel } from "../../config/labels"
 import FooterItem from "./FooterItem"
 import styles from "./styles.module.css"
 

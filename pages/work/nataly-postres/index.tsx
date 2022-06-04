@@ -15,7 +15,7 @@ import Image6 from "../../../public/images/work/nataly-postres/6.jpg"
 
 const data = {
   title: "Nataly Postres",
-  description: `Nataly Postres es una marca que crea productos de repostería de calidad, que además ofrece la mejor disposición al atender a sus clientes. Todos sus productos son hechos con amor, y más que un postre ofrece una experiencia agradable a cada consumidor.
+  description: `Nataly Postres es una marca que crea productos de repostería de calidad y además ofrece la mejor disposición al atender a sus clientes. Todos sus productos son hechos con amor, y más que un postre ofrece una experiencia agradable a cada consumidor.
     
   Su misión es lograr que sus clientes se sientan satisfechos con sus productos y desarrollen amor por la marca.`,
   service: "Branding",

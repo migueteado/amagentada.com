@@ -6,7 +6,7 @@ import MenuContainer from "./MenuContainer/Index"
 import MenuItem from "./MenuItem"
 import SocialItem from "./SocialItem"
 import { motion } from "framer-motion"
-import { menuLinks, socialLinks } from "../../config/const"
+import { menuLinks, socialLinks } from "../../config/menus"
 import Navigation from "./Navigation"
 
 const socials = socialLinks
