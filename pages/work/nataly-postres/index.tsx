@@ -1,26 +1,22 @@
 import { NextPage } from "next"
 import Head from "next/head"
+import { StaticImageData } from "next/image"
 import ContactToggler from "../../../components/Contact"
 import Footer from "../../../components/Footer"
 import Menu from "../../../components/Menu"
 import PageContent from "../../../components/PageContent"
+import Preloader from "../../../components/Preloader"
 import WorkContent from "../../../components/WorkContent"
 import WorkImage from "../../../components/WorkImage"
-import Image1 from "../../../public/images/work/nataly-postres/1.gif"
-import Image2 from "../../../public/images/work/nataly-postres/2.jpg"
-import Image3 from "../../../public/images/work/nataly-postres/3.jpg"
-import Image4 from "../../../public/images/work/nataly-postres/4.jpg"
-import Image5 from "../../../public/images/work/nataly-postres/5.jpg"
-import Image6 from "../../../public/images/work/nataly-postres/6.jpg"
+import { natalyPostres } from "../../../config/work"
 
-const data = {
-  title: "Nataly Postres",
-  description: `Nataly Postres es una marca que crea productos de repostería de calidad y además ofrece la mejor disposición al atender a sus clientes. Todos sus productos son hechos con amor, y más que un postre ofrece una experiencia agradable a cada consumidor.
-    
-  Su misión es lograr que sus clientes se sientan satisfechos con sus productos y desarrollen amor por la marca.`,
-  service: "Branding",
-  date: "Abril 2022",
-}
+const data = natalyPostres
+const imageIndex = natalyPostres.images.findIndex((i) => i.main)
+const firstImage = natalyPostres.images.splice(imageIndex, 1)[0]
+  .image as StaticImageData
+const images = natalyPostres.images
+  .sort((a, b) => a.order - b.order)
+  .map((i) => i.image) as StaticImageData[]
 
 const NatalyPostres: NextPage = () => {
   return (
@@ -30,26 +26,21 @@ const NatalyPostres: NextPage = () => {
       </Head>
 
       <PageContent>
-        <WorkImage
-          image={Image1}
-          description={"nataly postres"}
-          type={"first"}
-        />
+        <WorkImage image={firstImage} description={"nataly"} type={"first"} />
         <WorkContent
           title={data.title}
           description={data.description}
           service={data.service}
           date={data.date}
         />
-        <WorkImage image={Image2} description={"nataly postres"} />
-        <WorkImage image={Image3} description={"nataly postres"} />
-        <WorkImage image={Image4} description={"nataly postres"} />
-        <WorkImage image={Image5} description={"nataly postres"} />
-        <WorkImage image={Image6} description={"nataly postres"} />
+        {images.map((image, index) => (
+          <WorkImage key={index} image={image} description={"nataly"} />
+        ))}
       </PageContent>
       <Footer />
       <ContactToggler />
       <Menu />
+      <Preloader label={"Caso / Nataly Postres"} />
     </>
   )
 }

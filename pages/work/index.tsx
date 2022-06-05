@@ -5,34 +5,30 @@ import ContactToggler from "../../components/Contact"
 import Footer from "../../components/Footer"
 import Menu from "../../components/Menu"
 import PageContent from "../../components/PageContent"
+import Preloader from "../../components/Preloader"
+import Title from "../../components/Title"
+import WorkCase from "../../components/WorkCase"
+import { works } from "../../config/work"
 
-const Home: NextPage = () => {
+const Work: NextPage = () => {
   return (
     <>
       <Head>
         <title>Portafolio | Amagentada</title>
       </Head>
+      <PageContent>
+        <div>
+          {works.map((work, index) => (
+            <WorkCase key={index} work={work} />
+          ))}
+        </div>
+      </PageContent>
+      <Footer />
       <ContactToggler />
       <Menu />
-      <PageContent>
-        Portafolio
-        <ul>
-          <li>
-            <Link href="/work/pawrfectly">
-              <a>Pawrfectly</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/work/nataly-postres">
-              <a>Nataly Postres</a>
-            </Link>
-          </li>
-        </ul>
-      </PageContent>
-
-      <Footer />
+      <Preloader label={"Portafolio"} />
     </>
   )
 }
 
-export default Home
+export default Work

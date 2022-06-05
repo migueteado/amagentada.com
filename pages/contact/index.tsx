@@ -18,8 +18,6 @@ const Contact: NextPage = () => {
       <Head>
         <title>Inicio | Amagentada</title>
       </Head>
-      <ContactToggler />
-      <Menu />
       <PageContent>
         <div className={styles.Columns}>
           <div className={styles.ImageContainer}>
@@ -64,6 +62,8 @@ const Contact: NextPage = () => {
         </div>
       </PageContent>
       <Footer />
+      <ContactToggler />
+      <Menu />
     </>
   )
 }

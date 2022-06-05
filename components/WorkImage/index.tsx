@@ -40,7 +40,12 @@ const WorkImage = ({ image, description, type }: WorkImageProps) => {
         initial="hidden"
         className={styles.WorkImageContainer}
       >
-        <Image src={image} alt={description} layout="responsive" />
+        <Image
+          src={image}
+          alt={description}
+          layout="responsive"
+          placeholder="blur"
+        />
       </motion.div>
     )
   }

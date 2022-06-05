@@ -1,0 +1,11 @@
+.Layer2 {
+  @apply fixed h-screen w-screen inset-0 bg-neutral-900;
+}
+
+.Layer1 {
+  @apply fixed h-screen w-screen inset-0 flex items-center justify-center bg-white;
+}
+
+.PreloaderLabel {
+  @apply text-3xl md:text-6xl font-bold text-neutral-400;
+}

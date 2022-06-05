@@ -3,15 +3,15 @@
 }
 
 .MainFooter__Container {
-  @apply container mx-auto p-2;
+  @apply container mx-auto p-2 md:p-6;
 }
 
 .PageLabel {
-  @apply text-sm text-center my-4 tracking-wider;
+  @apply text-xs my-4 text-center md:text-left tracking-wider;
 }
 
 .DevBrand {
-  @apply text-xs text-center my-4 tracking-wider;
+  @apply text-xs my-4 text-center md:text-left tracking-wider;
 }
 
 .MainFooterLinks {
@@ -19,5 +19,5 @@
 }
 
 .MainFooterLabel {
-  @apply flex flex-col md:flex-row justify-between px-2;
+  @apply grid grid-cols-1 md:grid-cols-2 gap-2;
 }

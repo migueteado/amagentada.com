@@ -6,7 +6,12 @@ interface TitleProps {
 }
 
 const Title = ({ children }: TitleProps) => {
-  return <h1 className={styles.Title}>{children}</h1>
+  return (
+    <div className={styles.TitleContainer}>
+      <h1 className={styles.Title}>{children}</h1>
+      <div className={styles.TitleDivider}></div>
+    </div>
+  )
 }
 
 export default Title

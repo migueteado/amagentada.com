@@ -56,36 +56,36 @@ const menuLinks = {
       label: "Inicio",
       icon: faHome,
     },
-    // {
-    //   id: "about",
-    //   to: "/about",
-    //   label: "Acerca de mi",
-    //   icon: faUser,
-    // },
-    // {
-    //   id: "consultancies",
-    //   to: "/consultancies",
-    //   label: "Asesorias",
-    //   icon: faComments,
-    // },
-    // {
-    //   id: "services",
-    //   to: "/services",
-    //   label: "Servicios",
-    //   icon: faPalette,
-    // },
+    {
+      id: "about",
+      to: "/about",
+      label: "Acerca de mi",
+      icon: faUser,
+    },
+    {
+      id: "consultancies",
+      to: "/consultancies",
+      label: "Asesorias",
+      icon: faComments,
+    },
+    {
+      id: "services",
+      to: "/services",
+      label: "Servicios",
+      icon: faPalette,
+    },
     {
       id: "work",
       to: "/work",
       label: "Portafolio",
       icon: faBriefcase,
     },
-    // {
-    //   id: "contact",
-    //   to: "/contact",
-    //   label: "Contactame",
-    //   icon: faPaperPlane,
-    // },
+    {
+      id: "contact",
+      to: "/contact",
+      label: "Contactame",
+      icon: faPaperPlane,
+    },
   ],
 }
 
