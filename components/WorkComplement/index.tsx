@@ -17,7 +17,7 @@ interface WorkComplementProps {
   }[]
 }
 
-const WorkComplement = ({ works }: WorkComplementProps) => {
+const WorkComplement = ({ works }: WorkComplementProps): JSX.Element => {
   return (
     <div className={styles.WorkComplement}>
       <h1 className={styles.Title}>Otros Casos de Estudio</h1>

@@ -1,0 +1,7 @@
+.Header {
+  @apply block relative w-full pt-5 md:pt-10 h-12;
+}
+
+.HeaderContent {
+  @apply block relative h-12 pl-5 pr-20 md:pl-10 md:pr-24 flex items-center justify-between;
+}

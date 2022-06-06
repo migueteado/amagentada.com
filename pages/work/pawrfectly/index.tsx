@@ -1,8 +1,8 @@
 import { NextPage } from "next"
 import Head from "next/head"
 import { StaticImageData } from "next/image"
-import ContactToggler from "../../../components/Contact"
 import Footer from "../../../components/Footer"
+import Header from "../../../components/Header"
 import Menu from "../../../components/Menu"
 import PageContent from "../../../components/PageContent"
 import Preloader from "../../../components/Preloader"
@@ -33,7 +33,7 @@ const Pawrfectly: NextPage = () => {
       <Head>
         <title>Caso / Pawrfectly | Amagentada</title>
       </Head>
-
+      <Header />
       <PageContent>
         <WorkImage
           image={firstImage}
@@ -52,7 +52,6 @@ const Pawrfectly: NextPage = () => {
         <WorkComplement works={[prevWork, nextWork]} />
       </PageContent>
       <Footer />
-      <ContactToggler />
       <Menu />
       <Preloader label={preloader.workPawrfectly} />
     </>

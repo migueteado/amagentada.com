@@ -18,7 +18,7 @@ const variants = {
     transition: {
       delay: 0.3,
       duration: 0.2,
-      staggerChildren: 0.1,
+      staggerChildren: 0.3,
     },
   },
   close: {
@@ -26,7 +26,7 @@ const variants = {
     transition: {
       delay: 0.3,
       duration: 0.2,
-      staggerChildren: 0.1,
+      staggerChildren: 0.3,
     },
   },
 }
@@ -40,32 +40,35 @@ const Menu = (): JSX.Element => {
 
   return (
     <>
-      <MenuToggler toggle={handleMenuOpen} />
       <Backdrop isOpen={isOpen} toggle={handleMenuOpen} />
-      <MenuContainer isOpen={isOpen} toggle={handleMenuOpen}>
-        <Navigation title={socials.title}>
-          <motion.ul
-            className={styles.Socials}
-            variants={variants}
-            animate={isOpen ? "open" : "closed"}
-          >
-            {socials.links.map(({ to, label, icon }, index) => (
-              <SocialItem key={index} to={to} label={label} icon={icon} />
-            ))}
-          </motion.ul>
-        </Navigation>
+      <MenuContainer isOpen={isOpen}>
+        <div className={styles.SocialsContainer}>
+          <Navigation title={socials.title}>
+            <motion.ul
+              className={styles.Socials}
+              variants={variants}
+              animate={isOpen ? "open" : "closed"}
+            >
+              {socials.links.map(({ to, label }, index) => (
+                <SocialItem key={index} to={to} label={label} />
+              ))}
+            </motion.ul>
+          </Navigation>
+        </div>
+
         <Navigation title={navigation.title}>
           <motion.ul
             className={styles.Navigation}
             variants={variants}
             animate={isOpen ? "open" : "closed"}
           >
-            {navigation.links.map(({ to, label, icon }, index) => (
-              <MenuItem key={index} to={to} label={label} icon={icon} />
+            {navigation.links.map(({ to, label }, index) => (
+              <MenuItem key={index} to={to} label={label} />
             ))}
           </motion.ul>
         </Navigation>
       </MenuContainer>
+      <MenuToggler toggle={handleMenuOpen} isOpen={isOpen} />
     </>
   )
 }

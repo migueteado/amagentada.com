@@ -19,7 +19,7 @@ interface WorkCaseCondensedProps {
   }
 }
 
-const WorkCaseCondensed = ({ work }: WorkCaseCondensedProps) => {
+const WorkCaseCondensed = ({ work }: WorkCaseCondensedProps): JSX.Element => {
   const thumbnail = work.images.find((i) => i.thumbnail)
     ?.image as StaticImageData
 

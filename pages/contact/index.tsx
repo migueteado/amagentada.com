@@ -3,16 +3,14 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { NextPage } from "next"
 import Head from "next/head"
-import Image from "next/image"
-import ContactToggler from "../../components/Contact"
 import Footer from "../../components/Footer"
 import Menu from "../../components/Menu"
 import PageContent from "../../components/PageContent"
 import Title from "../../components/Title"
 import styles from "./styles.module.css"
-import Image1 from "../../public/images/work/pawrfectly/1.jpg"
 import Preloader from "../../components/Preloader"
 import { preloader } from "../../config/labels"
+import Header from "../../components/Header"
 
 const Contact: NextPage = () => {
   return (
@@ -20,6 +18,7 @@ const Contact: NextPage = () => {
       <Head>
         <title>Inicio | Amagentada</title>
       </Head>
+      <Header />
       <PageContent>
         <div className={styles.Columns}>
           <div className={styles.ImageContainer}>
@@ -64,7 +63,6 @@ const Contact: NextPage = () => {
         </div>
       </PageContent>
       <Footer />
-      <ContactToggler />
       <Menu />
       <Preloader label={preloader.contact} />
     </>

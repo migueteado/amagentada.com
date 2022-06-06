@@ -1,13 +1,13 @@
 const devLabel = "🚀 DEVELOPED BY SOYMVILLALOBOS"
 const brandLabel = "AMAGENTADA | Diseño gráfico y Branding © 2022"
+const email = "amagentada@gmail.com"
 const menu = {
   title: "Menu",
-  home: "Inicio",
   about: "Sobre mi",
   work: "Portafolio",
-  consultancies: "Asesorias",
+  consultancies: "Asesorías",
   services: "Servicios",
-  contact: "Contáctame",
+  contact: "Contacto",
 }
 const preloader = {
   home: "Amagentada",
@@ -28,4 +28,4 @@ const socials = {
   pinterest: "Pinterest",
 }
 
-export { devLabel, brandLabel, preloader, menu, socials }
+export { devLabel, brandLabel, email, preloader, menu, socials }

@@ -19,7 +19,7 @@ interface WorkCaseProps {
   }
 }
 
-const WorkCase = ({ work }: WorkCaseProps) => {
+const WorkCase = ({ work }: WorkCaseProps): JSX.Element => {
   const thumbnail = work.images.find((i) => i.thumbnail)
     ?.image as StaticImageData
 

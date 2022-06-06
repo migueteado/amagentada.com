@@ -15,7 +15,11 @@ const variants = {
   hidden: { opacity: 0, y: 400, transition: { duration: 1 } },
 }
 
-const WorkImage = ({ image, description, type }: WorkImageProps) => {
+const WorkImage = ({
+  image,
+  description,
+  type,
+}: WorkImageProps): JSX.Element => {
   const controls = useAnimation()
   const [ref, inView] = useInView()
 

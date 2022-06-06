@@ -22,7 +22,7 @@ const tap = {
   scale: 0.95,
 }
 
-const LinkButton = ({ to, type, children }: LinkButtonProps) => {
+const LinkButton = ({ to, type, children }: LinkButtonProps): JSX.Element => {
   if (type === LinkButtonType.internal) {
     return (
       <Link href={to}>

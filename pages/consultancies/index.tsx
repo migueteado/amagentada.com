@@ -1,7 +1,7 @@
 import { NextPage } from "next"
 import Head from "next/head"
-import ContactToggler from "../../components/Contact"
 import Footer from "../../components/Footer"
+import Header from "../../components/Header"
 import LinkButton, { LinkButtonType } from "../../components/LinkButton"
 import Menu from "../../components/Menu"
 import PageContent from "../../components/PageContent"
@@ -16,8 +16,7 @@ const Consultancies: NextPage = () => {
       <Head>
         <title>Asesorias | Amagentada</title>
       </Head>
-      <ContactToggler />
-      <Menu />
+      <Header />
       <PageContent>
         <h1>Agendemos una asesoria</h1>
         <p>
@@ -44,6 +43,7 @@ const Consultancies: NextPage = () => {
         </LinkButton>
       </PageContent>
       <Footer />
+      <Menu />
       <Preloader label={preloader.consultancies} />
     </>
   )

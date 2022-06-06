@@ -1,39 +1,37 @@
-import { faTimes } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion"
 import { ReactNode } from "react"
+import MenuBody from "../MenuBody"
+import MenuFooter from "../MenuFooter"
 import styles from "./styles.module.css"
 
 interface MenuContainerProps {
   isOpen: boolean
-  toggle: Function
   children: ReactNode
 }
 
 const variants = {
   open: {
     x: 0,
+    opacity: 1,
+    maxWidth: 800,
     transition: {
-      duration: 0.2,
+      duration: 0.5,
     },
   },
   closed: {
     x: "100%",
+    opacity: 0,
+    maxWidth: 0,
     transition: {
-      duration: 0.2,
+      duration: 0.5,
     },
   },
 }
 
 const MenuContainer = ({
   isOpen,
-  toggle,
   children,
 }: MenuContainerProps): JSX.Element => {
-  const handleToggle = () => {
-    toggle()
-  }
-
   return (
     <>
       <motion.div
@@ -41,19 +39,8 @@ const MenuContainer = ({
         animate={isOpen ? "open" : "closed"}
         variants={variants}
       >
-        <div className={styles.CloseButtonContainer}>
-          <motion.button
-            className={styles.CloseButton}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleToggle}
-          >
-            <FontAwesomeIcon icon={faTimes} />
-          </motion.button>
-        </div>
-        <div className={styles.Menu}>
-          <div className={styles.MenuContent}>{children}</div>
-        </div>
+        <MenuBody>{children}</MenuBody>
+        <MenuFooter />
       </motion.div>
     </>
   )

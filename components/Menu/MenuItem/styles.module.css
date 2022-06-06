@@ -1,7 +1,11 @@
-.MenuIcon {
-  @apply mr-2 text-xs;
+.MenuItemContainer {
+  @apply overflow-hidden h-10;
 }
 
 .MenuItem {
-  @apply text-lg flex items-center justify-start cursor-pointer;
+  @apply text-4xl flex flex-col items-start justify-between cursor-pointer top-0 h-20 font-semibold;
+}
+
+.MenuItemContent {
+  @apply h-10;
 }

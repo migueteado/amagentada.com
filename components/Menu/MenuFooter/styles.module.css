@@ -1,0 +1,19 @@
+.MenuFooterContainer {
+  @apply flex justify-start pb-10;
+}
+
+.MenuFooterContent {
+  @apply px-12 md:px-24 w-full;
+}
+
+.MenuFooterTitle {
+  @apply pb-3 text-gray-400 font-thin tracking-wider;
+}
+
+.Email {
+  @apply text-black font-semibold cursor-pointer;
+}
+
+.Email a {
+  @apply pb-1.5 relative;
+}

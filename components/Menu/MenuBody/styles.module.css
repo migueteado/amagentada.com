@@ -1,0 +1,11 @@
+.MenuBody {
+  @apply pt-10 flex flex-col justify-center items-center grow;
+}
+
+.MenuBodyContainer {
+  @apply px-12 md:px-24 flex flex-col md:flex-row w-full items-start md:items-center justify-center md:justify-start;
+}
+
+.MenuBodyContent {
+  @apply flex flex-col-reverse md:flex-row grow items-center md:items-start;
+}

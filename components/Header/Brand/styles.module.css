@@ -1,0 +1,7 @@
+.Brand {
+  @apply text-neutral-800 text-xl font-bold font-serif;
+}
+
+.Brand a {
+  @apply px-4;
+}

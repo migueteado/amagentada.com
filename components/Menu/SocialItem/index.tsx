@@ -1,11 +1,8 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion"
 import styles from "./styles.module.css"
 
 interface SocialItemProps {
   to: string
-  icon: IconProp
   label: string
 }
 
@@ -26,20 +23,21 @@ const variants = {
   },
 }
 
-const SocialItem = ({ to, icon, label }: SocialItemProps): JSX.Element => {
+const SocialItem = ({ to, label }: SocialItemProps): JSX.Element => {
   return (
-    <motion.a
-      className={styles.SocialItem}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-      href={to}
-      target="_blank"
-      rel="noreferrer"
-      variants={variants}
-    >
-      <FontAwesomeIcon icon={icon} className={styles.SocialIcon} />
-      <span>{label}</span>
-    </motion.a>
+    <motion.div className={styles.SocialItemContainer} variants={variants}>
+      <motion.a
+        className={styles.SocialItem}
+        whileHover={{ y: "-50%" }}
+        whileTap={{ scale: 0.95 }}
+        href={to}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className={styles.SocialItemContent}>{label}</div>
+        <div className={styles.SocialItemContent}>{label}</div>
+      </motion.a>
+    </motion.div>
   )
 }
 

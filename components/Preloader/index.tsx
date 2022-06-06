@@ -26,7 +26,7 @@ const transition2 = {
   type: "spring",
 }
 
-const Preloader = ({ label }: PreloaderProps) => {
+const Preloader = ({ label }: PreloaderProps): JSX.Element => {
   return (
     <>
       <motion.div
