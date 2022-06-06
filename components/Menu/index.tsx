@@ -44,7 +44,7 @@ const Menu = (): JSX.Element => {
       <MenuContainer isOpen={isOpen}>
         <div className={styles.SocialsContainer}>
           <Navigation title={socials.title}>
-            <motion.ul
+            <motion.div
               className={styles.Socials}
               variants={variants}
               animate={isOpen ? "open" : "closed"}
@@ -52,12 +52,12 @@ const Menu = (): JSX.Element => {
               {socials.links.map(({ to, label }, index) => (
                 <SocialItem key={index} to={to} label={label} />
               ))}
-            </motion.ul>
+            </motion.div>
           </Navigation>
         </div>
 
         <Navigation title={navigation.title}>
-          <motion.ul
+          <motion.div
             className={styles.Navigation}
             variants={variants}
             animate={isOpen ? "open" : "closed"}
@@ -65,7 +65,7 @@ const Menu = (): JSX.Element => {
             {navigation.links.map(({ to, label }, index) => (
               <MenuItem key={index} to={to} label={label} />
             ))}
-          </motion.ul>
+          </motion.div>
         </Navigation>
       </MenuContainer>
       <MenuToggler toggle={handleMenuOpen} isOpen={isOpen} />

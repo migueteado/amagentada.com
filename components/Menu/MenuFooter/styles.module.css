@@ -15,5 +15,5 @@
 }
 
 .Email a {
-  @apply pb-1.5 relative;
+  @apply pb-1.5 relative border-b border-gray-400 hover:border-pink-500 transition-all;
 }

@@ -1,3 +1,11 @@
+.FooterItemContainer {
+  @apply overflow-hidden h-7 mb-4;
+}
+
 .FooterItem {
-  @apply text-center tracking-wider text-sm uppercase cursor-pointer;
+  @apply text-lg flex flex-col items-start justify-between cursor-pointer top-0 h-14;
+}
+
+.FooterItemContent {
+  @apply h-7 w-full;
 }

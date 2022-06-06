@@ -16,8 +16,8 @@ const Home: NextPage = () => {
       <Header />
       <PageContent>Inicio</PageContent>
       <Footer />
-      <Preloader label={preloader.home} />
       <Menu />
+      <Preloader label={preloader.home} />
     </>
   )
 }

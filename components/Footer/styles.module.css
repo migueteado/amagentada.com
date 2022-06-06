@@ -1,23 +1,47 @@
-.MainFooter {
-  @apply w-full border-t;
+.Footer {
+  @apply bg-black py-24;
 }
 
-.MainFooter__Container {
-  @apply container mx-auto p-2 md:p-6;
+.FooterContainer {
+  @apply container w-full max-w-6xl mx-auto px-5 md:px-10;
 }
 
-.PageLabel {
-  @apply text-xs my-4 text-center md:text-left tracking-wider;
+.FooterContact {
+  @apply text-white mb-10 md:mb-24 text-center md:text-left;
 }
 
-.DevBrand {
-  @apply text-xs my-4 text-center md:text-left tracking-wider;
+.FooterContactTitle {
+  @apply text-3xl md:text-6xl font-bold mb-6;
 }
 
-.MainFooterLinks {
-  @apply my-4 flex justify-center;
+.FooterContactLink {
+  @apply cursor-pointer text-3xl md:text-6xl font-thin mb-6;
 }
 
-.MainFooterLabel {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-2;
+.FooterContactLink a {
+  @apply border-b border-gray-400 transition-all hover:border-pink-500;
+}
+
+.FooterContent {
+  @apply text-white grid grid-cols-1 md:grid-cols-2 py-5 md:py-10;
+}
+
+.FooterLabels {
+  @apply mb-10 md:mb-0 order-last md:order-first;
+}
+
+.FooterMenu {
+  @apply order-first md:order-last mb-10 md:mb-0;
+}
+
+.FooterCopy {
+  @apply pb-4 text-center md:text-left;
+}
+
+.FooterDev {
+  @apply pb-4 text-center md:text-left;
+}
+
+.FooterSocials {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center md:text-left;
 }
