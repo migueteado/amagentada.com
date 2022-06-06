@@ -1,5 +1,5 @@
-const devLabel = "🚀 DEVELOPED BY SOYMVILLALOBOS"
-const brandLabel = "AMAGENTADA | Diseño gráfico y Branding © 2022"
+const devLabel = "🚀 Developed by soymvillalobos"
+const brandLabel = "Amagentada | Diseño gráfico y Branding © 2022"
 const email = "amagentada@gmail.com"
 const menu = {
   title: "Menu",

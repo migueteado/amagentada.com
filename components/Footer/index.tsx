@@ -16,7 +16,7 @@ const Footer = (): JSX.Element => {
             <div className={styles.FooterContactTitle}>¿Tienes una idea?</div>
             <div className={styles.FooterContactLink}>
               <Link href={links.contact}>
-                <a>Hablame sobre eso</a>
+                <a>Coméntame al respecto</a>
               </Link>
             </div>
           </div>

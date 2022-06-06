@@ -19,7 +19,7 @@
 }
 
 .FooterContactLink a {
-  @apply border-b border-gray-400 transition-all hover:border-pink-500;
+  @apply border-b pb-2 border-gray-400 transition-all hover:border-pink-500;
 }
 
 .FooterContent {

@@ -1,1 +1,19 @@
+.Title {
+  @apply text-4xl md:text-6xl font-serif font-bold mb-10 mt-10;
+}
 
+.Subtitle {
+  @apply text-2xl md:text-4xl font-serif font-bold mb-8 mt-10;
+}
+
+.Text {
+  @apply text-xl mb-6;
+}
+
+ul.Text {
+  @apply pl-8;
+}
+
+.Text li {
+  @apply list-disc;
+}

@@ -14,10 +14,6 @@ interface LinkButtonProps {
   type: LinkButtonType
 }
 
-const hover = {
-  scale: 1.1,
-}
-
 const tap = {
   scale: 0.95,
 }
@@ -26,11 +22,7 @@ const LinkButton = ({ to, type, children }: LinkButtonProps): JSX.Element => {
   if (type === LinkButtonType.internal) {
     return (
       <Link href={to}>
-        <motion.button
-          whileHover={hover}
-          whileTap={tap}
-          className={styles.Button}
-        >
+        <motion.button whileTap={tap} className={styles.Button}>
           {children}
         </motion.button>
       </Link>
@@ -38,11 +30,7 @@ const LinkButton = ({ to, type, children }: LinkButtonProps): JSX.Element => {
   } else {
     return (
       <a target="_blank" rel="noreferrer" href={to}>
-        <motion.button
-          whileHover={hover}
-          whileTap={tap}
-          className={styles.Button}
-        >
+        <motion.button whileTap={tap} className={styles.Button}>
           {children}
         </motion.button>
       </a>

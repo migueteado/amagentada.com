@@ -7,7 +7,7 @@
 }
 
 .WorkCaseService {
-  @apply text-sm uppercase tracking-wider mb-2;
+  @apply text-sm text-gray-400 tracking-wider mb-2;
 }
 
 .WorkCaseTitle {
