@@ -11,6 +11,8 @@ import PageContent from "../../components/PageContent"
 import Title from "../../components/Title"
 import styles from "./styles.module.css"
 import Image1 from "../../public/images/work/pawrfectly/1.jpg"
+import Preloader from "../../components/Preloader"
+import { preloader } from "../../config/labels"
 
 const Contact: NextPage = () => {
   return (
@@ -64,6 +66,7 @@ const Contact: NextPage = () => {
       <Footer />
       <ContactToggler />
       <Menu />
+      <Preloader label={preloader.contact} />
     </>
   )
 }

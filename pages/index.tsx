@@ -4,6 +4,8 @@ import ContactToggler from "../components/Contact"
 import Footer from "../components/Footer"
 import Menu from "../components/Menu"
 import PageContent from "../components/PageContent"
+import Preloader from "../components/Preloader"
+import { preloader } from "../config/labels"
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +17,7 @@ const Home: NextPage = () => {
       <Menu />
       <PageContent>Inicio</PageContent>
       <Footer />
+      <Preloader label={preloader.home} />
     </>
   )
 }

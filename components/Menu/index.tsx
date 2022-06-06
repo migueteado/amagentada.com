@@ -6,11 +6,11 @@ import MenuContainer from "./MenuContainer/Index"
 import MenuItem from "./MenuItem"
 import SocialItem from "./SocialItem"
 import { motion } from "framer-motion"
-import { menuLinks, socialLinks } from "../../config/menus"
+import { navMenu, socialMenu } from "../../config/menus"
 import Navigation from "./Navigation"
 
-const socials = socialLinks
-const navigation = menuLinks
+const socials = socialMenu
+const navigation = navMenu
 
 const variants = {
   open: {
@@ -49,8 +49,8 @@ const Menu = (): JSX.Element => {
             variants={variants}
             animate={isOpen ? "open" : "closed"}
           >
-            {socials.links.map(({ id, to, label, icon }) => (
-              <SocialItem key={id} to={to} label={label} icon={icon} />
+            {socials.links.map(({ to, label, icon }, index) => (
+              <SocialItem key={index} to={to} label={label} icon={icon} />
             ))}
           </motion.ul>
         </Navigation>
@@ -60,8 +60,8 @@ const Menu = (): JSX.Element => {
             variants={variants}
             animate={isOpen ? "open" : "closed"}
           >
-            {navigation.links.map(({ id, to, label, icon }) => (
-              <MenuItem key={id} to={to} label={label} icon={icon} />
+            {navigation.links.map(({ to, label, icon }, index) => (
+              <MenuItem key={index} to={to} label={label} icon={icon} />
             ))}
           </motion.ul>
         </Navigation>

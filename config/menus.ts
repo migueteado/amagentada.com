@@ -11,82 +11,64 @@ import {
   faLinkedinIn,
   faPinterestP,
 } from "@fortawesome/free-brands-svg-icons"
+import { links } from "./links"
+import { menu, socials } from "./labels"
 
-const footerLinks = {
-  title: "Footer",
+const socialMenu = {
+  title: socials.title,
   links: [
     {
-      id: "privacy",
-      to: "/privacy",
-      label: "Politicas de Privacidad",
-    },
-  ],
-}
-
-const socialLinks = {
-  title: "Redes Sociales",
-  links: [
-    {
-      id: "instagram",
-      to: "https://www.instagram.com/byamagentada/",
-      label: "Instagram",
+      to: links.instagram,
+      label: socials.instagram,
       icon: faInstagram,
     },
     {
-      id: "pinterest",
-      to: "https://co.pinterest.com/Amagentada/",
-      label: "Pinterest",
+      to: links.pinterest,
+      label: socials.pinterest,
       icon: faPinterestP,
     },
     {
-      id: "linkedin",
-      to: "https://www.linkedin.com/in/amagentada/",
-      label: "LinkedIn",
+      to: links.linkedin,
+      label: socials.linkedin,
       icon: faLinkedinIn,
     },
   ],
 }
 
-const menuLinks = {
-  title: "Menu",
+const navMenu = {
+  title: menu.title,
   links: [
     {
-      id: "home",
-      to: "/",
-      label: "Inicio",
+      to: links.home,
+      label: menu.home,
       icon: faHome,
     },
     {
-      id: "about",
-      to: "/about",
-      label: "Acerca de mi",
+      to: links.about,
+      label: menu.about,
       icon: faUser,
     },
     {
-      id: "consultancies",
-      to: "/consultancies",
-      label: "Asesorias",
-      icon: faComments,
-    },
-    {
-      id: "services",
-      to: "/services",
-      label: "Servicios",
-      icon: faPalette,
-    },
-    {
-      id: "work",
-      to: "/work",
-      label: "Portafolio",
+      to: links.work,
+      label: menu.work,
       icon: faBriefcase,
     },
     {
-      id: "contact",
-      to: "/contact",
-      label: "Contactame",
+      to: links.consultancies,
+      label: menu.consultancies,
+      icon: faComments,
+    },
+    {
+      to: links.services,
+      label: menu.services,
+      icon: faPalette,
+    },
+    {
+      to: links.contact,
+      label: menu.contact,
       icon: faPaperPlane,
     },
   ],
 }
 
-export { footerLinks, menuLinks, socialLinks }
+export { navMenu, socialMenu }

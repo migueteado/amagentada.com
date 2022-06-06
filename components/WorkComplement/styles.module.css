@@ -1,0 +1,11 @@
+.WorkComplement {
+  @apply pt-12 md:pt-52;
+}
+
+.Title {
+  @apply text-5xl font-bold font-serif mb-12;
+}
+
+.WorkGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+}

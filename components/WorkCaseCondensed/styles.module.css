@@ -1,0 +1,27 @@
+.WorkCaseCondensed {
+  @apply grid grid-cols-1 gap-8 mb-16;
+}
+
+.WorkCaseCondensedContent {
+  @apply flex flex-col justify-center items-center md:items-start text-center md:text-left;
+}
+
+.WorkCaseCondensedService {
+  @apply text-sm uppercase tracking-wider mb-2;
+}
+
+.WorkCaseCondensedTitle {
+  @apply text-3xl font-bold mb-6 font-serif;
+}
+
+.WorkCaseCondensedDescription {
+  @apply text-lg;
+}
+
+.WorkCaseCondensedImage {
+  @apply overflow-hidden cursor-pointer rounded;
+}
+
+.WorkCaseCondensedImageContainer {
+  @apply block relative;
+}
