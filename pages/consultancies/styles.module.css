@@ -1,9 +1,9 @@
 .Title {
-  @apply text-4xl md:text-6xl font-serif font-bold mb-10 mt-10;
+  @apply text-4xl md:text-6xl font-Solway font-bold mb-10 mt-10;
 }
 
 .Subtitle {
-  @apply text-2xl md:text-4xl font-serif font-bold mb-8 mt-10;
+  @apply text-2xl md:text-4xl font-Solway font-bold mb-8 mt-10;
 }
 
 .Text {

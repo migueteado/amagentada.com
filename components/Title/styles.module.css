@@ -3,7 +3,7 @@
 }
 
 .Title {
-  @apply text-5xl md:text-7xl font-bold font-serif mb-6;
+  @apply text-5xl md:text-7xl font-bold font-Solway mb-6;
 }
 
 .TitleDivider {

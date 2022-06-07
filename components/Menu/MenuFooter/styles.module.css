@@ -7,7 +7,7 @@
 }
 
 .MenuFooterTitle {
-  @apply pb-3 text-gray-400 font-thin tracking-wider;
+  @apply pb-3 text-primary font-thin tracking-wider;
 }
 
 .Email {
@@ -15,5 +15,5 @@
 }
 
 .Email a {
-  @apply pb-1.5 relative border-b border-gray-400 hover:border-pink-500 transition-all;
+  @apply pb-1.5 relative border-b border-gray-400 hover:border-primary transition-all;
 }

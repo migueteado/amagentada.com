@@ -7,11 +7,11 @@
 }
 
 .WorkCaseService {
-  @apply text-gray-400 tracking-wider mb-2;
+  @apply text-primary tracking-wider mb-2;
 }
 
 .WorkCaseTitle {
-  @apply text-5xl font-bold mb-6 font-serif;
+  @apply text-5xl font-bold mb-6 font-Solway;
 }
 
 .WorkCaseDescription {

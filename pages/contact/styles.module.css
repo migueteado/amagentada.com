@@ -1,29 +1,11 @@
-.PageText {
-  @apply text-xl whitespace-pre-line mb-12;
-}
-
-.ContactPageContainer {
-}
-
-.ContactContainer {
-}
-
 .Title {
-  @apply text-2xl font-bold mb-2 font-serif;
+  @apply text-4xl md:text-6xl font-Solway font-bold mb-10 mt-10;
 }
 
-.Contacts {
-  @apply grid grid-cols-1 gap-4 text-xl;
+.Subtitle {
+  @apply text-2xl md:text-4xl font-Solway font-bold mb-8 mt-10;
 }
 
-.ImageContainer {
-  @apply relative w-full h-96 bg-black;
-}
-
-.TextContainer {
-  @apply p-12 shadow-lg mt-24 -left-24;
-}
-
-.Columns {
-  @apply grid grid-cols-2 relative;
+.Text {
+  @apply text-2xl mb-6;
 }

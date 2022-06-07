@@ -16,51 +16,29 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Inicio | Amagentada</title>
+        <title>Contacto | Amagentada</title>
       </Head>
       <Header />
       <PageContent>
-        <div className={styles.Columns}>
-          <div className={styles.ImageContainer}>
-            <div className={styles.ImageContent}></div>
-          </div>
-          <div className={styles.TextContainer}>
-            <div className={styles.TextContent}>
-              <Title>Hablemos sobre tu marca</Title>
-              <p className={styles.PageText}>
-                Puedes contactarme a traves de WhatsApp, Telegram o mi correo
-                electronico!
-              </p>
-              <div className={styles.ContactPageContainer}>
-                <div className={styles.ContactContainer}>
-                  <h1 className={styles.Title}>Contacto</h1>
-                  <div className={styles.Contacts}>
-                    <div className={styles.WhatsApp}>
-                      <a href="">
-                        <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
-                      </a>
-                    </div>
-                    <div className={styles.Telegram}>
-                      <a href="">
-                        <FontAwesomeIcon icon={faTelegramPlane} /> Telegram
-                      </a>
-                    </div>
-                    <div className={styles.Email}>
-                      <a href="">
-                        <FontAwesomeIcon icon={faEnvelope} />{" "}
-                        amagentada@gmail.com
-                      </a>
-                    </div>
-                  </div>
-                  <h1 className={styles.Title}>Horario</h1>
-                  <div>
-                    <p>Lunes a Viernes de 9:00 a 18:00 (GMT-5)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h1 className={styles.Title}>Hablemos sobre tu marca</h1>
+        <p className={styles.Text}>
+          Puedes contactarme a traves de WhatsApp y correo electronico!
+        </p>
+        <h2 className={styles.Subtitle}>Contacto</h2>
+        <ul className={styles.Text}>
+          <li>
+            <a href="">
+              <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <FontAwesomeIcon icon={faEnvelope} /> amagentada@gmail.com
+            </a>
+          </li>
+        </ul>
+        <h2 className={styles.Subtitle}>Horario</h2>
+        <p className={styles.Text}>Lunes a Viernes de 9:00 a 18:00 (GMT-5)</p>
       </PageContent>
       <Footer />
       <Menu />

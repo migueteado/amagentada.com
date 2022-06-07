@@ -1,5 +1,13 @@
 .WorkCaseCondensed {
-  @apply grid grid-cols-1 gap-8 mb-16;
+  @apply grid grid-cols-1 gap-8 mb-16 overflow-hidden;
+}
+
+.WorkCaseCondensedContainer {
+  width: 200%;
+}
+
+.WorkCondensedContentContainer {
+  width: 50%;
 }
 
 .WorkCaseCondensedContent {
@@ -7,11 +15,11 @@
 }
 
 .WorkCaseCondensedService {
-  @apply text-sm text-gray-400 tracking-wider mb-2;
+  @apply text-primary tracking-wider mb-2;
 }
 
 .WorkCaseCondensedTitle {
-  @apply text-3xl font-bold mb-6 font-serif;
+  @apply text-3xl font-bold mb-6 font-Solway;
 }
 
 .WorkCaseCondensedDescription {
@@ -19,7 +27,7 @@
 }
 
 .WorkCaseCondensedImage {
-  @apply overflow-hidden cursor-pointer rounded;
+  @apply overflow-hidden cursor-pointer rounded mb-6;
 }
 
 .WorkCaseCondensedImageContainer {

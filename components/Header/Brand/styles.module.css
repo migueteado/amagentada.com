@@ -1,5 +1,5 @@
 .Brand {
-  @apply text-neutral-800 text-xl font-bold font-serif;
+  @apply text-primary text-xl font-bold font-NotoSans hover:text-black transition-all duration-500;
 }
 
 .Brand a {

@@ -1,10 +1,10 @@
 .WorkHeader {
-  @apply py-16 md:py-32 flex flex-col justify-center;
+  @apply py-16 md:py-32 flex flex-col justify-center text-center md:text-left;
   height: 80vh;
 }
 
 .WorkTitle {
-  @apply text-4xl md:text-6xl font-serif font-bold mb-10;
+  @apply text-4xl md:text-6xl font-Solway font-bold mb-10;
 }
 
 .WorkDescription {
@@ -20,5 +20,5 @@
 }
 
 .ScrollButton {
-  @apply text-lg rounded-full h-12 w-12 text-black bg-white hover:bg-black hover:text-white transition-all duration-500;
+  @apply text-lg rounded-full h-12 w-12 text-black bg-white hover:bg-primary hover:text-white transition-all duration-500;
 }

@@ -1,17 +1,40 @@
 import Link from "next/link"
-import { brandLabel, devLabel, email } from "../../config/labels"
+import { useAnimation, motion } from "framer-motion"
+import { brandLabel, devLabel } from "../../config/labels"
 import { links } from "../../config/links"
 import { socialMenu } from "../../config/menus"
 import FooterItem from "./FooterItem"
+import { useEffect } from "react"
+import { useInView } from "react-intersection-observer"
 import styles from "./styles.module.css"
 
 const socials = socialMenu
 
+const variants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  hidden: { opacity: 0, y: 100, transition: { duration: 1 } },
+}
+
 const Footer = (): JSX.Element => {
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible")
+    }
+  }, [controls, inView])
+
   return (
     <>
       <div className={styles.Footer}>
-        <div className={styles.FooterContainer}>
+        <motion.div
+          className={styles.FooterContainer}
+          ref={ref}
+          animate={controls}
+          variants={variants}
+          initial="hidden"
+        >
           <div className={styles.FooterContact}>
             <div className={styles.FooterContactTitle}>¿Tienes una idea?</div>
             <div className={styles.FooterContactLink}>
@@ -33,7 +56,7 @@ const Footer = (): JSX.Element => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   )
