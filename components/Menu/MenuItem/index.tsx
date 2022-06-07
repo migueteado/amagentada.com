@@ -12,16 +12,20 @@ const variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.2,
+      duration: 0.5,
     },
   },
   closed: {
     opacity: 0,
     y: 15,
     transition: {
-      duration: 0.2,
+      duration: 0.5,
     },
   },
+}
+
+const hover = {
+  y: "-50%",
 }
 
 const MenuItem = ({ to, label }: MenuItemProps): JSX.Element => {
@@ -30,7 +34,7 @@ const MenuItem = ({ to, label }: MenuItemProps): JSX.Element => {
       <Link href={to}>
         <motion.a
           className={styles.MenuItem}
-          whileHover={{ y: "-50%" }}
+          whileHover={hover}
           whileTap={{ scale: 0.95 }}
         >
           <div className={styles.MenuItemContent}>{label}</div>

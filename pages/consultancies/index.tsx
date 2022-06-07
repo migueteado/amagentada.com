@@ -20,16 +20,16 @@ const Consultancies: NextPage = () => {
       <PageContent>
         <h1 className={styles.Title}>Agendemos una asesoria</h1>
         <p className={styles.Text}>
-          Mis asesorias consisten en un servicio profesional de informacion y
-          consejo en temas y procesos relacionados al diseno grafico, incluyendo
-          topicos mas especificos como la definicion, concepcion y construccion
-          de marcas personales y empresariales.
+          Mis asesorías consisten en un servicio profesional de información y
+          consejo en temas y procesos relacionados con el diseño gráfico,
+          incluyendo tópicos más específicos como la definición, concepción y
+          construcción de marcas personales y empresariales.
         </p>
         <p className={styles.Text}>
-          Las asesorias tienen un costo de $30 dolares americanos y duran 1
+          Las asesorías tienen un costo de $30 dólares americanos y duran 1
           hora.
         </p>
-        <h2 className={styles.Subtitle}>¿Que no incluyen las asesorias?</h2>
+        <h2 className={styles.Subtitle}>¿Qué no incluyen las asesorías?</h2>
         <ul className={styles.Text}>
           <li>Servicio de Branding.</li>
         </ul>
