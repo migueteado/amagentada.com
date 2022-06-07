@@ -35,7 +35,7 @@ const ContentAndy: NextPage = () => {
       </Head>
       <Header />
       <PageContent>
-        <WorkImage image={firstImage} description={"mari"} type={"first"} />
+        <WorkImage image={firstImage} description={"andy"} type={"first"} />
         <WorkContent
           title={data.title}
           description={data.description}
@@ -43,7 +43,7 @@ const ContentAndy: NextPage = () => {
           date={data.date}
         />
         {images.map((image, index) => (
-          <WorkImage key={index} image={image} description={"mari"} />
+          <WorkImage key={index} image={image} description={"andy"} />
         ))}
         <WorkComplement works={[prevWork, nextWork]} />
       </PageContent>
