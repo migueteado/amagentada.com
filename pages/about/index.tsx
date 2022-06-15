@@ -36,7 +36,7 @@ const About: NextPage = () => {
           </div>
           <div className={styles.GridContent}>
             <div className={styles.ImageContainer}>
-              <Image src={about} layout="responsive" />
+              <Image src={about} layout="responsive" alt="about" />
             </div>
           </div>
         </div>
