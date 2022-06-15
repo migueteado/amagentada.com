@@ -9,7 +9,7 @@ import Preloader from "../../../components/Preloader"
 import WorkComplement from "../../../components/WorkComplement"
 import WorkContent from "../../../components/WorkContent"
 import WorkImage from "../../../components/WorkImage"
-import { preloader } from "../../../config/labels"
+import { preloader, titles } from "../../../config/labels"
 import { contentAndy, works } from "../../../config/work"
 
 const workIndex = works.findIndex((w) => w.id === contentAndy.id)
@@ -31,7 +31,7 @@ const ContentAndy: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Caso / Content Andy | Amagentada</title>
+        <title>{titles.workAndy}</title>
       </Head>
       <Header />
       <PageContent>

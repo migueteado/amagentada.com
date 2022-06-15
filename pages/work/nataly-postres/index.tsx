@@ -9,7 +9,7 @@ import Preloader from "../../../components/Preloader"
 import WorkComplement from "../../../components/WorkComplement"
 import WorkContent from "../../../components/WorkContent"
 import WorkImage from "../../../components/WorkImage"
-import { preloader } from "../../../config/labels"
+import { preloader, titles } from "../../../config/labels"
 import { natalyPostres, works } from "../../../config/work"
 
 const workIndex = works.findIndex((w) => w.id === natalyPostres.id)
@@ -31,7 +31,7 @@ const NatalyPostres: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Caso / Nataly Postres | Amagentada</title>
+        <title>{titles.workNataly}</title>
       </Head>
       <Header />
       <PageContent>

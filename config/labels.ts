@@ -12,7 +12,7 @@ const menu = {
 const preloader = {
   home: "Amagentada",
   about: "Sobre mi",
-  contact: "Contáctame",
+  contact: "Contacto",
   consultancies: "Asesorias",
   services: "Servicios",
   work: "Portafolio",
@@ -27,5 +27,27 @@ const socials = {
   linkedin: "LinkedIn",
   pinterest: "Pinterest",
 }
+const pageTitle = "Amagentada"
+const titles = {
+  home: `${pageTitle}`,
+  about: `Sobre mi | ${pageTitle}`,
+  contact: `Contacto | ${pageTitle}`,
+  consultancies: `Asesorias | ${pageTitle}`,
+  services: `Servicios | ${pageTitle}`,
+  work: `Portafolio | ${pageTitle}`,
+  workPawrfectly: `Caso / Pawrfectly | ${pageTitle}`,
+  workNataly: `Caso / Nataly Postres | ${pageTitle}`,
+  workMari: `Caso / Mari Manrique | ${pageTitle}`,
+  workAndy: `Caso / Content Andy | ${pageTitle}`,
+}
 
-export { devLabel, brandLabel, email, preloader, menu, socials }
+export {
+  devLabel,
+  brandLabel,
+  email,
+  preloader,
+  menu,
+  socials,
+  pageTitle,
+  titles,
+}

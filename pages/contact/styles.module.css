@@ -1,11 +1,51 @@
 .Title {
-  @apply text-4xl md:text-6xl font-Solway font-bold mb-10 mt-10;
+  @apply text-4xl md:text-5xl font-Solway font-bold mb-10 mt-10;
 }
 
 .Subtitle {
   @apply text-2xl md:text-4xl font-Solway font-bold mb-8 mt-10;
 }
 
-.Text {
-  @apply text-2xl mb-6;
+.Subtext {
+  @apply mb-12 text-neutral-500;
+}
+
+.ContactText {
+  @apply text-lg text-neutral-700;
+}
+
+.ContactLink {
+  @apply text-primary font-bold;
+}
+
+.Contacts {
+  @apply flex flex-col justify-start gap-6 mb-12;
+}
+
+.ContactContainer {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24;
+}
+
+.GridContentImage .GridContentText {
+  @apply flex flex-col h-full w-full;
+}
+
+.GridContentImage {
+  @apply order-first md:order-last;
+}
+
+.GridContentText {
+  @apply order-last md:order-first;
+}
+
+.ImageContainer {
+  @apply overflow-hidden rounded-sm md:pl-12 h-full flex items-center;
+}
+
+.ImageContainer .ImageDesktop {
+  @apply relative w-full hidden md:block;
+}
+
+.ImageContainer .ImageMobile {
+  @apply relative w-full block md:hidden;
 }

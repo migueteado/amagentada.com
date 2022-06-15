@@ -1,5 +1,11 @@
 const links = {
   whatsapp: "https://wa.me/573127924123",
+  whatsappConsultancies: `https://wa.me/573127924123?text=${encodeURI(
+    "Hola! Estoy interesad@ en agendar una asesoria."
+  )}`,
+  whatsappContact: `https://wa.me/573127924123?text=${encodeURI(
+    "Hola! Vengo de tu pagina y me gustaria comentarte algo."
+  )}`,
   linkedin: "https://www.linkedin.com/in/amagentada/",
   pinterest: "https://co.pinterest.com/Amagentada/",
   instagram: "https://www.instagram.com/byamagentada/",

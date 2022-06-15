@@ -5,13 +5,13 @@ import Header from "../../components/Header"
 import Menu from "../../components/Menu"
 import PageContent from "../../components/PageContent"
 import Preloader from "../../components/Preloader"
-import { preloader } from "../../config/labels"
+import { preloader, titles } from "../../config/labels"
 
 const Services: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Servicios | Amagentada</title>
+        <title>{titles.services}</title>
       </Head>
       <Header />
       <PageContent>Servicios</PageContent>

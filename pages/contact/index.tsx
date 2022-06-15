@@ -1,44 +1,77 @@
-import { faTelegramPlane, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 import { NextPage } from "next"
 import Head from "next/head"
 import Footer from "../../components/Footer"
 import Menu from "../../components/Menu"
 import PageContent from "../../components/PageContent"
-import Title from "../../components/Title"
 import styles from "./styles.module.css"
 import Preloader from "../../components/Preloader"
-import { preloader } from "../../config/labels"
+import { preloader, titles } from "../../config/labels"
 import Header from "../../components/Header"
+import { motion } from "framer-motion"
+import { links } from "../../config/links"
+import image5 from "../../public/images/miscellaneous/image5.jpg"
+import image5square from "../../public/images/miscellaneous/image5square.jpg"
+import Image from "next/image"
+import ContactCard from "../../components/ContactCard"
 
 const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Contacto | Amagentada</title>
+        <title>{titles.contact}</title>
       </Head>
       <Header />
       <PageContent>
-        <h1 className={styles.Title}>Hablemos sobre tu marca</h1>
-        <p className={styles.Text}>
-          Puedes contactarme a traves de WhatsApp y correo electronico!
-        </p>
-        <h2 className={styles.Subtitle}>Contacto</h2>
-        <ul className={styles.Text}>
-          <li>
-            <a href="">
-              <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <FontAwesomeIcon icon={faEnvelope} /> amagentada@gmail.com
-            </a>
-          </li>
-        </ul>
-        <h2 className={styles.Subtitle}>Horario</h2>
-        <p className={styles.Text}>Lunes a Viernes de 9:00 a 18:00 (GMT-5)</p>
+        <div className={styles.ContactContainer}>
+          <motion.div className={styles.GridContentText}>
+            <h1 className={styles.Title}>
+              Conversemos. Háblame de tu proyecto.
+            </h1>
+            <p className={styles.Subtext}>Construyamos algo juntos ⚡</p>
+            <div className={styles.Contacts}>
+              <ContactCard icon={faPaperPlane} to={links.email}>
+                <div className={styles.ContactText}>
+                  <div>Envíame un email a</div>
+                  <div className={styles.ContactLink}>amagentada@gmail.com</div>
+                </div>
+              </ContactCard>
+              <ContactCard icon={faWhatsapp} to={links.whatsappContact}>
+                <div className={styles.ContactText}>
+                  <div>
+                    Envíame un{" "}
+                    <span className={styles.ContactLink}>WhatsApp</span>
+                  </div>
+                </div>
+              </ContactCard>
+            </div>
+            <p className={styles.Subtext}>
+              Horario habitual: Lunes a Viernes de 9:00 a 18:00 (GMT-5)
+            </p>
+          </motion.div>
+          <div className={styles.GridContentImage}>
+            <div className={styles.ImageContainer}>
+              <div className={styles.ImageDesktop}>
+                <Image
+                  src={image5}
+                  alt="contact"
+                  layout="responsive"
+                  placeholder="blur"
+                  className={styles.ImageDesktop}
+                />
+              </div>
+              <div className={styles.ImageMobile}>
+                <Image
+                  src={image5square}
+                  alt="contact"
+                  layout="responsive"
+                  placeholder="blur"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </PageContent>
       <Footer />
       <Menu />

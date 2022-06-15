@@ -6,7 +6,7 @@ import Header from "../../components/Header"
 import Menu from "../../components/Menu"
 import PageContent from "../../components/PageContent"
 import Preloader from "../../components/Preloader"
-import { preloader } from "../../config/labels"
+import { preloader, titles } from "../../config/labels"
 import about from "../../public/images/about/me1.jpg"
 import styles from "./styles.module.css"
 
@@ -14,7 +14,7 @@ const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Sobre mi | Amagentada</title>
+        <title>{titles.about}</title>
       </Head>
       <Header />
       <Menu />

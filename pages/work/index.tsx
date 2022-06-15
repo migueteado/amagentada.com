@@ -9,7 +9,7 @@ import Menu from "../../components/Menu"
 import PageContent from "../../components/PageContent"
 import Preloader from "../../components/Preloader"
 import WorkCase from "../../components/WorkCase"
-import { preloader } from "../../config/labels"
+import { preloader, titles } from "../../config/labels"
 import { works } from "../../config/work"
 import styles from "./styles.module.css"
 
@@ -17,7 +17,7 @@ const Work: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Portafolio | Amagentada</title>
+        <title>{titles.work}</title>
       </Head>
       <Header />
       <PageContent>

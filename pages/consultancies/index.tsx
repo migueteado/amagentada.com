@@ -6,7 +6,7 @@ import LinkButton, { LinkButtonType } from "../../components/LinkButton"
 import Menu from "../../components/Menu"
 import PageContent from "../../components/PageContent"
 import Preloader from "../../components/Preloader"
-import { preloader } from "../../config/labels"
+import { preloader, titles } from "../../config/labels"
 import { links } from "../../config/links"
 import styles from "./styles.module.css"
 
@@ -14,7 +14,7 @@ const Consultancies: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Asesorias | Amagentada</title>
+        <title>{titles.consultancies}</title>
       </Head>
       <Header />
       <PageContent>
@@ -34,9 +34,7 @@ const Consultancies: NextPage = () => {
           <li>Servicio de Branding.</li>
         </ul>
         <LinkButton
-          to={`${links.whatsapp}?text=${encodeURI(
-            "Hola! Estoy interesad@ en agendar una asesoria."
-          )}`}
+          to={links.whatsappConsultancies}
           type={LinkButtonType.external}
         >
           Agenda tu asesoria
