@@ -1,9 +1,9 @@
 .ContactCard {
-  @apply border border-tertiary rounded-sm p-4 md:p-8 flex w-full max-w-lg flex-row items-center hover:border-primary transition-all duration-500;
+  @apply border border-tertiary rounded-3xl p-4 md:p-8 flex w-full max-w-lg flex-row items-center hover:border-primary transition-all duration-500;
 }
 
 .IconContainer {
-  @apply bg-tertiary h-10 md:h-14 w-10 md:w-14 rounded-sm flex items-center justify-center mr-4 md:mr-8;
+  @apply bg-tertiary h-10 md:h-14 w-10 md:w-14 rounded-full flex items-center justify-center mr-4 md:mr-8;
 }
 
 .Icon {

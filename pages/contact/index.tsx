@@ -1,5 +1,5 @@
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 import { NextPage } from "next"
 import Head from "next/head"
 import Footer from "../../components/Footer"
@@ -31,7 +31,7 @@ const Contact: NextPage = () => {
             </h1>
             <p className={styles.Subtext}>Construyamos algo juntos ⚡</p>
             <div className={styles.Contacts}>
-              <ContactCard icon={faPaperPlane} to={links.email}>
+              <ContactCard icon={faEnvelope} to={links.email}>
                 <div className={styles.ContactText}>
                   <div>Envíame un email a</div>
                   <div className={styles.ContactLink}>amagentada@gmail.com</div>
